@@ -1,0 +1,289 @@
+* {
+    margin: 0;
+    box-sizing: border-box;
+}
+
+/* ------------------------------------------------------------------ 기본 바디 */
+body {
+    /* font-family: Arial, Helvetica, sans-serif; */
+    color: #333;
+    background: #fff;
+}
+
+/* ------------------------------------------------------------------ 헤더 */
+.header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    width: 100%;
+    height: 120px;
+    border-bottom: 1px solid #ddd;
+
+    /* border: 1px solid black; */
+}
+
+.headerBox {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    width: 1200px;
+    height: 100%;
+    padding: 0 20px;
+
+    /* border: 1px solid black; */
+}
+
+.logo {
+    font-size: 30px;
+    font-weight: bold;
+    text-decoration: none;
+    color: #313131;
+}
+
+.menubar {
+    font-size: 20px;
+    cursor: pointer;
+}
+
+.nav a {
+    margin: 0 12px;
+    text-decoration: none;
+    color: #444;
+    font-size: 16px;
+}
+
+.nav a:hover {
+    color: #000000;
+    font-weight: bold;
+}
+
+.auth-btns .login-btn {
+    padding: 6px 14px;
+    background: inherit;
+    color: black;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.childrenMain {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    width: 100%;
+    height: auto;
+
+    /* background-color: #34495e; */
+
+    /* border: 1px solid black; */
+}
+
+.modal {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: inherit;
+    border: none;
+    font-size: 16px;
+}
+
+/* ------------------------------------------------------------------ 푸터 */
+.footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-self: center;
+
+    width: 100%;
+    height: 100%;
+    padding: 20px 0px;
+
+    background: inherit;
+    color: #666;
+    border-top: 1px solid #ccc;
+
+    /* border: 1px solid black; */
+}
+
+.footer .aBox {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    height: 50px;
+    width: 1200px;
+
+    /* border: 1px solid black; */
+}
+
+.footer .aBox a {
+    padding: 0px 10px 0px 10px;
+
+    color: #444;
+    text-decoration: none;
+    font-size: 14px;
+}
+
+.footer .componyHelp {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    height: 50px;
+    width: 1200px;
+
+    color: #888;
+    font-size: 12px;
+
+    /* border: 1px solid black; */
+}
+
+.footer .copyright {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    height: 50px;
+    width: 1200px;
+
+    font-size: 11px;
+
+    /* border: 1px solid black; */
+}
+
+/* ------------------------------------------------------------------ All menu modal */
+
+.menuModal {
+    position: fixed;
+    inset: 0;
+    z-index: 1000;
+}
+
+.menuBackdrop {
+    position: absolute;
+    inset: 0;
+    background: rgba(0,0,0,0.5);
+}
+
+.menuPanel {
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    justify-content: flex-start;
+    
+    position: relative;
+    width: 80%;
+    max-width: 1500px;
+    height: 80%;
+
+    margin: 60px auto;
+    /* padding: 40px; */
+    background: #fff;
+    overflow-y: auto;
+
+    /* border: 1px solid black; */
+}
+
+.closeBtn {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    background: none;
+    border: none;
+    font-size: 18px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.menuPanel .menuContentTitle {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    width: 100%;
+    height: 70px;
+
+    margin: 50px 0px;
+
+    font-size: 55px;
+    font-weight: bold;
+
+    /* border: 1px solid black; */
+}
+
+.menuPanel .section-first {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+
+    width: 100%;
+    height: 50px;
+
+    padding: 12px 24px;
+    font-size: 19px;
+    font-weight: bold;
+    color: #444;
+
+    background-color: #f6f6f6;
+
+    /* border: 1px solid black; */
+}
+
+.menuPanel .section-contents {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+
+    width: 100%;
+    height: 100%;
+
+    padding: 20px 0px 50px;
+
+    /* border: 1px solid black; */
+}
+
+.section-contents .section-contents-box {
+    width: 230px;
+    height: 150px;
+    border-right: 1px solid #dbdbdb;
+}
+
+.section-contents .section-second {
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+
+    width: 100%;
+    height: 25%;
+
+    /* border: 1px solid black; */
+}
+
+.section-second a {
+    color: #444;
+    font-size: 17px;
+    font-weight: bold;
+    text-decoration: none;
+    padding: 0px 24px;
+}
+
+.section-contents .section-third {
+    display: flex;
+    flex-direction: column;
+
+    width: 100%;
+    height: 75%;
+
+    /* border: 1px solid black; */
+}
+
+.section-third a {
+    color: #555;
+    font-size: 15px;
+    margin: 0 0 8px;
+    text-decoration: none;
+    padding: 0px 24px;
+}

@@ -1,0 +1,314 @@
+.registrationPage {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    width: 100%;
+    height: 100%;
+
+    background-color: inherit;
+
+    /* border: 1px solid black; */
+}
+
+/* ------------------------------------------------------------------ */
+
+.registrationPage .fieldBox {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+    width: 100%;
+    height: 310px;
+    
+    background-color: #34495e;
+    
+    /* border: 1px solid black; */
+}
+
+.fieldBox .registBox {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    
+    width: 900px;
+    height: 100%;
+    
+    /* border: 1px solid black; */
+}
+
+.registBox .registTextTitle {
+    display: flex;
+    align-items: flex-end;
+    justify-content: flex-start;
+
+    width: 100%;
+    height: 30%;
+
+    padding: 0px 20px;
+    font-size: 30px;
+    font-weight: bold;
+    color: #dbdbdb;
+
+    /* border: 1px solid black; */
+
+}
+
+.registBox .registTitleNotice {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+
+    width: 100%;
+    height: 30%;
+
+    padding: 0px 20px;
+    font-size: 20px;
+    font-weight: bold;
+    color: #fff;
+
+    /* border: 1px solid black; */
+}
+
+.registBox .registTitleNotice .textBold {
+    font-size: 30px;
+    margin-bottom: 16px;
+    border-bottom: 1px solid #ddd;
+}
+
+.registBox .registList {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    
+    flex-wrap: wrap;
+    
+    width: 100%;
+    height: 50%;
+    
+    font-size: 20px;
+    padding: 0px 20px;
+    
+    /* border: 1px solid black; */
+}
+
+.registList a {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    
+    width: 250px;
+    padding: 5px 20px;
+    color: #313131;
+    background-color: #f1c40f;
+    text-decoration: none;
+    border: 1px solid #f1c40f;
+}
+
+.fieldBox .registImg {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    width: 300px;
+    height: 100%;
+
+    /* border: 1px solid black; */
+}
+
+.fieldBox .registImg img {
+  width: 100%;
+  height: 100%;
+
+  object-fit: contain;
+}
+
+/* ------------------------------------------------------------------ */
+
+.registBoardBox {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+
+    height: 100%;
+    width: 1200px;
+
+    /* border: 1px solid black; */
+}
+
+/* ------------------------------------------------------------------ */
+
+.registBoardBox .searchTable {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+.searchTable th {
+    height: 100%;
+    width: 20%;
+    padding: 18px 20px;
+    font-weight: bold;
+    font-size: 18px;
+
+    background-color: #f4f6f7;
+    border: 1px solid #ddd;
+}
+
+.searchTable td {
+    height: 100%;
+    width: 80%;
+    padding: 0 0 0 20px;
+
+    background-color: #fff;
+    border: 1px solid #ddd;
+}
+
+.searchTable .rowFlex {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+
+    gap: 10px;
+}
+
+.searchTable .sep {
+    color: #ddd;
+}
+
+.searchTable .linkBtn {
+    text-decoration: none;
+    font-size: 16px;
+    color: #444;
+    cursor: pointer;
+}
+
+.searchTable .timeList {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    
+    /* border: 1px solid black; */
+}
+
+.searchTable .wordWrite {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+
+    height: 100%;
+    width: 100%;
+
+    /* border: 1px solid black; */
+}
+
+.searchTable .wordWrite input {
+    height: 40px;
+    width: 730px;
+    font-size: 14px;
+    padding: 0 12px;
+    line-height: 40px;
+    border: 1px solid #ddd;
+}
+
+/* ------------------------------------------------------------------ */
+
+.registBoardBox .boardBox {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+
+    width: 100%;
+    height: auto;
+
+    margin-top: 20px;
+    font-weight: bold;
+
+    /* border: 1px solid black; */
+}
+
+.registBoardBox .boardTable td a {
+    text-decoration: none;
+    color: #444;
+}
+
+/* ------------------------------------------------------------------ */
+
+.registBoardBox .writeBtn {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+
+    width: 100%;
+    height: 40px;
+
+    margin-top: 20px;
+
+    /* border: 1px solid black; */
+}
+
+.registBoardBox .writeBtn button {
+    height: 100%;
+    width: 100px;
+    cursor: pointer;
+    background-color: #34495e;
+    color: #fff;
+    font-size: 14px;
+    border: none;
+}
+
+/* ------------------------------------------------------------------ */
+
+.pagenation {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    width: 100%;
+    height: 40px;
+
+    margin: 20px 0px;
+
+    /* border: 1px solid black; */
+}
+
+.pagenation ul {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.pagenation li {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    list-style: none;
+    width: 40px;
+    height: 40px;
+
+    cursor: pointer;
+    margin: 0 0 0 10px;
+
+    border: 1px solid #ddd;
+}
+
+.pagenation li a {
+    font-size: 16px;
+    color: #444;
+    text-decoration: none;
+}
+
+.pagenation li .rightMove {
+    padding-top: 4px;
+    color: #777;
+}
+
+.pagenation li.active {
+    border: 1px solid black;
+}

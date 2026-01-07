@@ -1,0 +1,316 @@
+.dangerBody {
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+
+    width: 1200px;
+    height: 100%;
+}
+
+.dangerBody .contents {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+
+    width: 80%;
+    height: auto;
+
+    padding: 20px;
+
+    border-left: 1px solid #dbdbdb;
+}
+
+.dangerBody .title {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    width: 100%;
+    padding: 20px 0px;
+    
+    /* border: 1px solid black; */
+}
+
+.dangerBody .titleName {
+    font-size: 26px;
+    font-weight: bold;
+}
+
+.dangerBody .title .arrow {
+    font-size: 12px;
+}
+
+.dangerBody .path a{
+    font-size: 13px;
+    text-decoration: none;
+    color: #444;
+}
+
+/*--------------------------------------------------- searchBox */
+
+.dangerBody .searchBox {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+
+    width: 100%;
+    height: 180px;
+    border: 1px solid #ddd;
+}
+
+.dangerBody .facility {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    width: 100%;
+    height: 60px;
+    border-bottom: 1px solid #ddd;
+}
+
+.facility .facTitle {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    height: 100%;
+    width: 20%;
+    background-color: #f4f6f7;
+    font-weight: bold;
+    font-size: 18px;
+    border-right: 1px solid #ddd;
+}
+
+.facility .facList {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+
+    height: 100%;
+    width: 80%;
+    
+    padding: 0 0 0 20px;
+    
+    /* border: 1px solid black; */
+}
+
+.facList a {
+    color: #444;
+    text-decoration: none;
+    padding: 0 5px;
+}
+
+/* ------------------------------------------------------------------ */
+
+.dangerBody .time {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    width: 100%;
+    height: 60px;
+    border-bottom: 1px solid #ddd;
+}
+
+.time .timeTitle {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    height: 100%;
+    width: 20%;
+    background-color: #f4f6f7;
+    font-weight: bold;
+    font-size: 18px;
+    border-right: 1px solid #ddd;
+}
+
+.time .timeList {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    height: 100%;
+    width: 80%;
+    
+    padding: 0 0 0 20px;
+    
+    /* border: 1px solid black; */
+}
+
+.timeList .a-tx {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 40px;
+
+    /* border: 1px solid black; */
+}
+
+.timeList a {
+    color: #444;
+    text-decoration: none;
+    padding: 0 5px;
+}
+
+.timeList .date-bx {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    height: 40px;
+    width: 460px;
+
+    font-size: 14px;
+    padding: 0 5px 0 0;
+
+    /* border: 1px solid black; */
+}
+
+.date-bx input {
+    width: 115px;
+    height: 40px;
+    font-size: 14px;
+    padding: 0 12px;
+    line-height: 40px;
+    border: 1px solid #ddd;
+}
+
+.calendar {
+    font-size: 25px;
+    cursor: pointer;
+}
+
+/* ------------------------------------------------------------------ */
+
+.dangerBody .word {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    width: 100%;
+    height: 60px;
+
+    /* border: 1px solid black; */
+}
+
+.word .wordTitle {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    height: 100%;
+    width: 20%;
+
+    background-color: #f4f6f7;
+
+    font-weight: bold;
+    font-size: 18px;
+    border-right: 1px solid #ddd;
+}
+
+.word .wordWrite {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+
+    height: 100%;
+    width: 80%;
+    
+    padding: 0 0 0 10px;
+    
+    /* border: 1px solid black; */
+}
+
+.wordWrite input {
+    height: 40px;
+    width: 500px;
+    font-size: 14px;
+    padding: 0 12px;
+    line-height: 40px;
+    border: 1px solid #ddd;
+}
+
+.wordWrite button {
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+
+    height: 40px;
+    padding: 0 16px;
+
+    background: inherit;
+    cursor: pointer;
+    border: 1px solid #767676;
+}
+
+.wordWrite .searchIcon {
+   font-size: 20px;
+}
+.wordWrite .resetIcon {
+    font-size: 18px;
+}
+
+/*--------------------------------------------------- boardBox */
+
+.dangerBody .boardBox {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+
+    width: 100%;
+    height: 900px;
+
+    margin-top: 20px;
+    font-weight: bold;
+
+    /* border: 1px solid black; */
+}
+
+.boardBox .surveyTitle {
+    display: flex;
+    align-items: center;
+
+    width: 100%;
+    height: 30px;
+    padding: 0 0 0 20px;
+    background-color: #f4f6f7;
+    border: 1px solid #ddd;
+}
+
+.boardBox .boardTable {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 10px;
+}
+
+.boardTable th {
+    padding: 8px 12px;
+    text-align: center;
+    vertical-align: middle;
+
+    background-color: #34495e;
+    color: #dbdbdb;
+    
+    border: 1px solid #ddd;
+}
+
+.boardTable td {
+    padding: 8px 12px;
+    text-align: center;
+    vertical-align: middle;
+    
+    border: 1px solid #ddd;
+}
+
+.chartBox {
+    width: 100%;
+    height: 500px;
+
+    padding-top: 20px;
+
+    /* border: 1px solid black; */
+}
