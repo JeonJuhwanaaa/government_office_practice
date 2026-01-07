@@ -73,12 +73,11 @@ function IdeaOffer(props) {
                         </label>
                     </div>
                     <div className='contentsBtn'>
-                        <button>아이디어 등록하기</button>
-                        <button>나의 아이디어 보기</button>
+                        <a href='#none'>아이디어 등록하기</a>
+                        <a href='#none'>나의 아이디어 보기</a>
                     </div>
 
                 </div>
-
             </div>
         </div>
     );
