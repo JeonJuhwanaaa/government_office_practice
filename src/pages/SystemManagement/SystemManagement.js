@@ -63,7 +63,11 @@ function SystemManagement(props) {
                     </div>
                     <div className='userListTable'>
                         <div className='boardCount'>
-                            <span>총 게시물: 30</span>
+                            <span>
+                                총&ensp;
+                                <span style={{fontWeight:'bold', color:'#444'}}>30</span>
+                                명의 회원이 있습니다.
+                            </span>
                         </div>
                         
                         <div className='boardBox'>
