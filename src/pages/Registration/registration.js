@@ -31,7 +31,7 @@ function registration(props) {
                         <a href='/'>기타<FaArrowCircleRight className='arrow-right'/></a>
                     </div>
                 </div>
-                <div className='registImg'></div>
+                <div className='registImg' ></div>
             </div>
 
             <div className='registBoardBox'>
