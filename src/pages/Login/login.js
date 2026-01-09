@@ -25,7 +25,7 @@ function Login() {
               <img src={eduImg} height={250} width={380} style={{padding: '0 0 0 50px'}}></img>
             </div>
             <div className='navBox'>
-              <a href='/'>중대산업재해 바로가기</a>
+              <a href='/industry'>중대산업재해 바로가기</a>
               <a href='/citizen'>중대시민재해 바로가기</a>
             </div>
           </div>

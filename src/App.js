@@ -2,6 +2,7 @@ import { Routes, Route } from 'react-router-dom';
 import Base from "./components/Base";
 import Login from './pages/Login/login.js';
 import Citizen from './pages/Citizen/citizen.js';
+import Industry from './pages/Industry/Industry.js';
 import Registration from './pages/Registration/registration.js';
 import DangerElement from './pages/DangerElement/dangerElement.js';
 import PublicFacility from './pages/PublicFacility/PublicFacility.js';
@@ -15,6 +16,7 @@ export default function App() {
         <Routes>
             <Route path="/" element={<Login />} />
             <Route path="/citizen" element={<Citizen />} />
+            <Route path="/industry" element={<Industry />} />
             <Route path="/citizen/dangerElement" element={<DangerElement />} />
             <Route path="/registration" element={<Registration />} />
             <Route path="/citizen/law/publicFacility" element={<PublicFacility />} />

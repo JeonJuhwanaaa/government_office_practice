@@ -55,6 +55,7 @@ function Base({children} ) {
                                     <a href=''>중대재해예방 업무지원</a>
                                 </div>
                                 <div className='section-third'>
+                                    <a href=''>현황정보 관리</a>
                                     <a href=''>일일업무보고 관리</a>
                                     <a href=''>안전계획 관리</a>
                                     <a href=''>시장 서한 답신 관리</a>
@@ -212,7 +213,7 @@ function Base({children} ) {
                 <div className='headerBox'>
                     <a href='/' className="logo">HamanConcrete</a>
                     <nav className="nav">
-                        <a href="/">중대산업재해</a>
+                        <a href="/industry">중대산업재해</a>
                         <a href="/citizen">중대시민재해</a>
                         <a href="/">소통채널</a>
                         <a href="/">연계관리</a>
