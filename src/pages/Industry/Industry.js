@@ -37,7 +37,7 @@ function Industry(props) {
                         </div>
                     <a href="#none" onClick={() => {menuClickEvent("support");}}>중대재해예방 업무지원{isMenuOpen.support ? <FaAngleUp /> : <FaAngleDown />}</a>
                     <div className={`nav-third ${isMenuOpen.support ? "open" : ""}`}>
-                        <a href="">현황정보 관리</a>
+                        <a href="/industry/IndoorMonitoring">실내 모니터링 관리</a>
                         <a href="/citizen/prevent/DailyReportManagement">일일업무보고 관리</a>
                         <a href="">안전계획 관리</a>
                         <a href="">시장 서한 답신 관리</a>
@@ -58,6 +58,10 @@ function Industry(props) {
                         <IoIosArrowForward className='arrow' />
                         <a href='/citizen'>중대산업재해 관리 대상</a>
                     </label>
+                </div>
+                
+                <div className=''>
+
                 </div>
 
 

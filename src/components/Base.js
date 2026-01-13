@@ -55,7 +55,7 @@ function Base({children} ) {
                                     <a href=''>중대재해예방 업무지원</a>
                                 </div>
                                 <div className='section-third'>
-                                    <a href=''>현황정보 관리</a>
+                                    <a href='/industry/IndoorMonitoring'>실내 모니터링 관리</a>
                                     <a href=''>일일업무보고 관리</a>
                                     <a href=''>안전계획 관리</a>
                                     <a href=''>시장 서한 답신 관리</a>
