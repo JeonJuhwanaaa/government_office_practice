@@ -41,6 +41,7 @@ function Industry(props) {
                         <a href="/citizen/prevent/DailyReportManagement">일일업무보고 관리</a>
                         <a href="">안전계획 관리</a>
                         <a href="">시장 서한 답신 관리</a>
+                        <a href="/industry/FieldSensor">현장센서 관리</a>
                     </div>
                     <a href='/citizen/dangerElement'>유해·위험요인 관리</a>
                     <a href='/citizen/ideaOffer'>재해예방 아이디어</a>

@@ -59,6 +59,7 @@ function Base({children} ) {
                                     <a href=''>일일업무보고 관리</a>
                                     <a href=''>안전계획 관리</a>
                                     <a href=''>시장 서한 답신 관리</a>
+                                    <a href='/industry/FieldSensor'>현장센서 관리</a>
                                 </div>
                             </div>
                             <div className='section-contents-box'>

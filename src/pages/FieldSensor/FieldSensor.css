@@ -1,0 +1,162 @@
+.fieldSensorPage {
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+
+    width: 1200px;
+    height: 860px;
+
+    /* border: 1px solid black; */
+}
+
+/* ------------------------------------------------------------------ */
+
+.fieldSensorPage .contents {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+
+    width: 80%;
+    height: auto;
+
+    padding: 20px;
+
+    border-left: 1px solid #dbdbdb;
+}
+
+.fieldSensorPage .title {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    width: 100%;
+    padding: 20px 0px;
+
+    /* border: 1px solid black; */
+}
+
+.fieldSensorPage .titleName {
+    font-size: 26px;
+    font-weight: bold;
+}
+
+.fieldSensorPage .title .arrow {
+    font-size: 12px;
+}
+
+.fieldSensorPage .path a{
+    font-size: 13px;
+    text-decoration: none;
+    color: #444;
+}
+
+/* ------------------------------------------------------------------ */
+
+.fieldSensorPage .kpiCardBox {
+    display: grid;
+    grid-template-columns: repeat(5, minmax(0, 1fr));
+    gap: 16px;
+    width: 100%;
+
+    /* border: 1px solid black; */
+}
+
+.fieldSensorPage .kpiCard {
+    /* 내부 배치 */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    min-height: 92px;
+
+    background: #fff;
+    padding: 14px 16px;
+    box-shadow: 0 1px 2px rgba(0,0,0,0.06);
+    
+    border: 1px solid #e6e6e6;
+    border-radius: 8px;
+}
+
+/* 카드 상단(타이틀/서브) */
+.fieldSensorPage .kpiTitle {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+    align-items: flex-start;
+
+    /* border: 1px solid black; */
+}
+
+.kpiTitle .topLabel {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    width: 100%;
+
+    /* border: 1px solid black; */
+}
+
+.fieldSensorPage .kpiLabel {
+    font-size: 14px;
+    font-weight: bold;
+    color: #222;
+    
+    /* border: 1px solid black; */
+}
+
+.kpiTitle .kpiInfo {
+    position: relative;
+    display: inline-flex;
+    align-items: center;
+    cursor: pointer;
+    color: #9e9e9e;
+
+    /* border: 1px solid black; */
+}
+
+.tooltip {
+    position: absolute;
+    bottom: 130%;
+    right: 0;
+    transform: translateX(0);
+
+    padding: 6px 8px;
+    border-radius: 6px;
+    font-size: 12px;
+    white-space: nowrap;
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.2s, visibility 0.2s;
+
+    z-index: 999;
+    background: #dbdbdb;
+    color: #444;
+
+    /* border: 1px solid black; */
+}
+
+.kpiTitle .kpiInfo:hover .tooltip {
+    visibility: visible;
+    opacity: 1;
+}
+
+.fieldSensorPage .kpiSub {
+    font-size: 12px;
+    color: #777;
+
+    /* border: 1px solid black; */
+}
+
+.fieldSensorPage .kpiValue {
+    margin-top: 10px;
+    font-size: 30px;
+    font-weight: bold;
+    letter-spacing: -0.5px;
+    color: #111;
+    /* text-align: right; */
+
+    border-top: 1px solid #e6e6e6;
+}
+
+/* ------------------------------------------------------------------ */
