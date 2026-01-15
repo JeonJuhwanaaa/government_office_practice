@@ -4,7 +4,7 @@
     justify-content: flex-start;
 
     width: 1200px;
-    height: 860px;
+    height: auto;
 
     /* border: 1px solid black; */
 }
@@ -160,3 +160,102 @@
 }
 
 /* ------------------------------------------------------------------ */
+
+.contents .sight {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    width: 100%;
+    height: 500px;
+
+    margin-top: 20px;
+
+    border: 1px solid black;
+}
+
+.sight .sightScreen {
+    width: 70%;
+    height: 100%;
+
+    border: 1px solid black;
+}
+
+.sight .sightState {
+    width: 30%;
+    height: 100%;
+
+    border: 1px solid black;
+}
+
+/* ------------------------------------------------------------------ */
+
+.fieldSensorPage .contents .subTitle {
+    display: flex;
+    align-items: flex-end;
+    justify-content: flex-start;
+
+    width: 100%;
+    height: 50px;
+
+    margin-top: 20px;
+
+    border-bottom: 1px solid #dbdbdb;
+}
+
+.fieldSensorPage .contents .subTitle button {
+    height: 50px;
+    width: 120px;
+
+    cursor: pointer;
+
+    padding: 5px 15px;
+
+    background-color: inherit;
+    border: 1px solid #dbdbdb;
+    border-bottom: none;
+}
+
+.fieldSensorPage .contents .subTitle button.active {
+    border: 1px solid black;
+}
+
+/* ------------------------------------------------------------------ */
+
+.contents .sensorListTable {
+    width: 100%;
+    height: auto;
+
+    /* margin-top: 20px; */
+
+    /* border: 1px solid black; */
+}
+
+.sensorListTable .boardTable {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.sensorListTable .boardTable th {
+    background-color: #f4f6f7;
+    color: #333;
+    font-size: 14px;
+    border-left: none;
+    border-right: none;
+
+    padding: 10px 0px;
+}
+
+.sensorListTable .boardTable td {
+    color: #333;
+    font-size: 14px;
+    border-left: none;
+    border-right: none;
+    
+    padding: 10px 0px;
+}
+
+.sensorListTable .boardTable a {
+    color: #333;
+    text-decoration: none;
+}

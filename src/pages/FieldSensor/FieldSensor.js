@@ -4,8 +4,12 @@ import { FaAngleDown } from "react-icons/fa6";
 import { FaAngleUp } from "react-icons/fa6";
 import { IoIosArrowForward } from "react-icons/io";
 import { useState } from 'react';
-import { IoMdRadioButtonOn } from "react-icons/io";
 import { IoIosInformationCircleOutline } from "react-icons/io";
+import { FaAngleRight } from "react-icons/fa6";
+import { FaAnglesRight } from "react-icons/fa6";
+import { IoSettingsSharp } from "react-icons/io5";
+
+import { sensorData } from './sensorData';
 
 function FieldSensor(props) {
 
@@ -21,6 +25,12 @@ function FieldSensor(props) {
         ));
     };
 
+    const [isTabActive, setIsTabActive] = useState('A');
+
+    const btnChange = (e) => {
+        // console.log(e);
+        setIsTabActive(e);
+    };
     return (
         <div className='fieldSensorPage'>
             <div className='sidebar'>
@@ -75,7 +85,7 @@ function FieldSensor(props) {
                             </div>
                             <span className="kpiSub">개수</span>
                         </div>
-                        <div className="kpiValue">3</div>
+                        <div className="kpiValue">34</div>
                     </div>
                     <div className="kpiCard">
                         <div className="kpiTitle">
@@ -88,7 +98,7 @@ function FieldSensor(props) {
                             </div>
                             <span className="kpiSub">개수</span>
                         </div>
-                        <div className="kpiValue">2</div>
+                        <div className="kpiValue">21</div>
                     </div>
                     <div className="kpiCard">
                         <div className="kpiTitle">
@@ -101,7 +111,7 @@ function FieldSensor(props) {
                             </div>
                             <span className="kpiSub">개수</span>
                         </div>
-                        <div className="kpiValue">1</div>
+                        <div className="kpiValue">9</div>
                     </div>
                     <div className="kpiCard">
                         <div className="kpiTitle">
@@ -114,7 +124,7 @@ function FieldSensor(props) {
                             </div>
                             <span className="kpiSub">개수</span>
                         </div>
-                        <div className="kpiValue">1</div>
+                        <div className="kpiValue">7</div>
                     </div>
                     <div className="kpiCard">
                         <div className="kpiTitle">
@@ -131,7 +141,74 @@ function FieldSensor(props) {
                     </div>
                 </div>
 
+                <div className='subTitle'>
+                    <button className={isTabActive === 'A' ? 'active' : ''} onClick={() => btnChange('A')}>1공장</button>
+                    <button className={isTabActive === 'B' ? 'active' : ''} onClick={() => btnChange('B')}>2공장</button>
+                    <button className={isTabActive === 'C' ? 'active' : ''} onClick={() => btnChange('C')}>3공장</button>
+                    <button className={isTabActive === 'D' ? 'active' : ''} onClick={() => btnChange('D')}>야적장</button>
+                    <button className={isTabActive === 'E' ? 'active' : ''} onClick={() => btnChange('E')}>출입구</button>
+                </div>
 
+                <div className='sight'>
+                    <div className='sightScreen'>
+                        서브 스크린
+                    </div>
+                    <div className='sightState'>
+                        상태/알람
+                    </div>
+                </div>
+
+                <div className='boardCount' style={{marginTop:'20px'}}>
+                    <span>
+                        총&ensp;
+                        <span style={{fontWeight:'bold', color:'#444'}}>34</span>
+                        건
+                    </span>
+                </div>
+
+                <div className='sensorListTable'>
+                    <table className='boardTable'>
+                        <caption></caption>
+                        <thead>
+                            <tr>
+                                <th>번호</th>
+                                <th>센서 ID</th>
+                                <th>센서 유형</th>
+                                <th>설치 위치</th>
+                                <th>상태</th>
+                                <th>통신 상태</th>
+                                <th>배터리</th>
+                                <th>최근 수신 시간</th>
+                                <th>관리</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            {sensorData.map((item) => (
+                                <tr key={item.id}>
+                                    <td>{item.id}</td>
+                                    <td>{item.sensorId}</td>
+                                    <td>{item.sensorType}</td>
+                                    <td>{item.position}</td>
+                                    <td>{item.state}</td>
+                                    <td>{item.comState}</td>
+                                    <td>{item.batteryState}</td>
+                                    <td>{item.lastDate}</td>
+                                    <td><a href=''><IoSettingsSharp /></a></td>
+                                </tr>
+                            ))}
+                        </tbody>
+                    </table>
+                </div>
+
+                <div className='pagenation' style={{marginTop:'50px'}}>
+                    <ul>
+                        <li className='active'><a href='/'>1</a></li>
+                        <li><a href='/'>2</a></li>
+                        <li><a href='/'>3</a></li>
+                        <li><a href='/'><FaAngleRight className='rightMove'/></a></li>
+                        <li><a href='/'><FaAnglesRight className='rightMove'/></a></li>
+                    </ul>
+                </div>
             </div>
         </div>
     );
