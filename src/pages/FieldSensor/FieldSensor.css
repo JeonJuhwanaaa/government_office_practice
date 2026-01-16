@@ -164,28 +164,53 @@
 .contents .sight {
     display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content: space-between;
 
     width: 100%;
     height: 500px;
 
     margin-top: 20px;
 
-    border: 1px solid black;
+    /* border: 1px solid black; */
 }
 
 .sight .sightScreen {
-    width: 70%;
+    width: 73%;
     height: 100%;
 
     border: 1px solid black;
 }
 
 .sight .sightState {
-    width: 30%;
+    display: flex;
+    flex-direction: column;
+
+    padding: 10px;
+
+    width: 25%;
     height: 100%;
 
-    border: 1px solid black;
+    font-size: 14px;
+    overflow-y: auto;
+    scrollbar-width: thin;
+
+    border: 1px solid #dbdbdb;
+}
+
+.sight .sightState label {
+    margin-bottom: 5px;
+}
+
+.sight .sightState label.emphasis{
+    color: #ff8001;
+    font-weight: bold;
+
+}
+.sight .sightState label.overemphasis{
+    color: red;
+    font-weight: bold;
+    padding-left: 5px;
+    border-left: 2px solid red;
 }
 
 /* ------------------------------------------------------------------ */

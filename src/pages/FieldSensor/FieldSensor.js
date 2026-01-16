@@ -142,11 +142,12 @@ function FieldSensor(props) {
                 </div>
 
                 <div className='subTitle'>
-                    <button className={isTabActive === 'A' ? 'active' : ''} onClick={() => btnChange('A')}>1공장</button>
-                    <button className={isTabActive === 'B' ? 'active' : ''} onClick={() => btnChange('B')}>2공장</button>
-                    <button className={isTabActive === 'C' ? 'active' : ''} onClick={() => btnChange('C')}>3공장</button>
+                    <button className={isTabActive === 'A' ? 'active' : ''} onClick={() => btnChange('A')}>제1공장</button>
+                    <button className={isTabActive === 'B' ? 'active' : ''} onClick={() => btnChange('B')}>제2공장</button>
+                    <button className={isTabActive === 'C' ? 'active' : ''} onClick={() => btnChange('C')}>제3공장</button>
                     <button className={isTabActive === 'D' ? 'active' : ''} onClick={() => btnChange('D')}>야적장</button>
-                    <button className={isTabActive === 'E' ? 'active' : ''} onClick={() => btnChange('E')}>출입구</button>
+                    <button className={isTabActive === 'E' ? 'active' : ''} onClick={() => btnChange('E')}>적재장</button>
+                    <button className={isTabActive === 'F' ? 'active' : ''} onClick={() => btnChange('F')}>출입구</button>
                 </div>
 
                 <div className='sight'>
@@ -154,15 +155,30 @@ function FieldSensor(props) {
                         서브 스크린
                     </div>
                     <div className='sightState'>
-                        상태/알람
+                        <label>[00:15] ENV-014 환경 센서 데이터 수신 (2공장 보관창고)</label>
+                        <label>[01:40] UWB-021 위치 데이터 정상 (적재장)</label>
+                        <label>[03:05] SAFE-009 배터리 잔량 38% (3공장 출입구)</label>
+                        <label>[04:30] ENV-011 환경 센서 정상 범위 유지 (2공장 혼합실)</label>
+                        <label>[06:10] UWB-001 위치 데이터 정상 (1공장 A라인)</label>
+                        <label className='emphasis'>[07:25] UWB-002 통신 지연 발생 (1공장 B라인)</label>
+                        <label>[08:00] SAFE-012 안전 센서 정상 수신 (2공장 통로)</label>
+                        <label className='overemphasis'>[09:15] ENV-018 통신 끊김 발생 (1공장 제어실)</label>
+                        <label>[10:05] ENV-018 통신 복구 및 데이터 수신 (1공장 제어실)</label>
+                        <label className='emphasis'>[11:40] SAFE-007 배터리 잔량 20% (야적장)</label>
+                        <label>[12:30] UWB-015 위치 데이터 정상 (출입구)</label>
+                        <label>[13:10] ENV-011 환경 센서 정상 수신 (2공장 혼합실)</label>
+                        <label className='overemphasis'>[14:35] SAFE-007 배터리 잔량 10% (야적장)</label>
+                        <label className='overemphasis'>[15:55] SAFE-007 통신 끊김 발생 (야적장)</label>
+                        <label>[17:20] SAFE-009 안전 센서 정상 수신 (3공장 출입구)</label>
+                        <label>[18:45] UWB-021 위치 데이터 정상 (적재장)</label>
+                        <label>[20:10] ENV-014 환경 센서 정상 범위 유지 (2공장 보관창고)</label>
+                        <label>[22:30] UWB-001 위치 데이터 정상 (1공장 A라인)</label>
                     </div>
                 </div>
 
                 <div className='boardCount' style={{marginTop:'20px'}}>
                     <span>
-                        총&ensp;
-                        <span style={{fontWeight:'bold', color:'#444'}}>34</span>
-                        건
+                        총&ensp;<span style={{fontWeight:'bold', color:'#444'}}>34</span>건
                     </span>
                 </div>
 
@@ -198,6 +214,10 @@ function FieldSensor(props) {
                             ))}
                         </tbody>
                     </table>
+                </div>
+
+                <div className='writeBtn'>
+
                 </div>
 
                 <div className='pagenation' style={{marginTop:'50px'}}>
