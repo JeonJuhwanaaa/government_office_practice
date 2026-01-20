@@ -8,6 +8,7 @@ import { IoIosInformationCircleOutline } from "react-icons/io";
 import { FaAngleRight } from "react-icons/fa6";
 import { FaAnglesRight } from "react-icons/fa6";
 import { IoSettingsSharp } from "react-icons/io5";
+import factoryImg from "../../image/factoryFloor.png";
 
 import { sensorData } from './sensorData';
 
@@ -152,7 +153,7 @@ function FieldSensor(props) {
 
                 <div className='sight'>
                     <div className='sightScreen'>
-                        서브 스크린
+                        <img src={factoryImg} style={{width:'100%', height:'100%'}}/>
                     </div>
                     <div className='sightState'>
                         <label>[00:15] ENV-014 환경 센서 데이터 수신 (2공장 보관창고)</label>
