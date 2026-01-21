@@ -9,6 +9,7 @@ import { FaAngleRight } from "react-icons/fa6";
 import { FaAnglesRight } from "react-icons/fa6";
 import { IoSettingsSharp } from "react-icons/io5";
 import factoryImg from "../../image/factoryFloor.png";
+import FieldSensorKonva from "./FieldSensorKonva";
 
 import { sensorData } from './sensorData';
 
@@ -32,6 +33,13 @@ function FieldSensor(props) {
         // console.log(e);
         setIsTabActive(e);
     };
+
+    const sensors = [
+        { id: "UWB-001", name: "A라인", x: 820, y: 420, status: "normal" },
+        { id: "UWB-002", name: "B라인", x: 940, y: 380, status: "warning" },
+        { id: "UWB-003", name: "C라인", x: 740, y: 280, status: "danger" },
+    ];
+
     return (
         <div className='fieldSensorPage'>
             <div className='sidebar'>
@@ -153,8 +161,9 @@ function FieldSensor(props) {
 
                 <div className='sight'>
                     <div className='sightScreen'>
-                        <img src={factoryImg} style={{width:'100%', height:'100%'}}/>
+                        <FieldSensorKonva src={factoryImg} sensors={sensors}/>
                     </div>
+
                     <div className='sightState'>
                         <label>[00:15] ENV-014 환경 센서 데이터 수신 (2공장 보관창고)</label>
                         <label>[01:40] UWB-021 위치 데이터 정상 (적재장)</label>
