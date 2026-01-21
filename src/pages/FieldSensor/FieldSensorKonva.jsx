@@ -47,6 +47,10 @@ export default function FieldSensorKonva({ src, sensors = [] }) {
             <Stage width={size.w} height={size.h}>
                 <Layer>
                     {
+                        img && <KonvaImage image={img} x={fit.x} y={fit.y} scaleX={fit.scale} scaleY={fit.scale} listening={false}/>
+                    }
+                    
+                    {
                         sensors.map((s) => {
                             const px = fit.x + s.x * fit.scale;
                             const py = fit.y + s.y * fit.scale;
