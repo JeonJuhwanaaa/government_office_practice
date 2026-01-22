@@ -75,35 +75,35 @@ function DailyReportManagement(props) {
                         <div className="kpiCardBox">
                             <div className="kpiCard">
                                 <div className="kpiTitle">
-                                    <span className="kpiLabel">누적 신고</span>
+                                    <span className="kpiLabel">누적 센서 이벤트</span>
                                     <span className="kpiSub">건수</span>
                                 </div>
                                 <div className="kpiValue">50</div>
                             </div>
                             <div className="kpiCard">
                                 <div className="kpiTitle">
-                                    <span className="kpiLabel">미조치</span>
+                                    <span className="kpiLabel">미조치 센서</span>
                                     <span className="kpiSub">건수</span>
                                 </div>
                                 <div className="kpiValue">12</div>
                             </div>
                             <div className="kpiCard">
                                 <div className="kpiTitle">
-                                    <span className="kpiLabel">조치중</span>
+                                    <span className="kpiLabel">조치 진행 중</span>
                                     <span className="kpiSub">건수</span>
                                 </div>
                                 <div className="kpiValue">25</div>
                             </div>
                             <div className="kpiCard">
                                 <div className="kpiTitle">
-                                    <span className="kpiLabel">위험도 상</span>
+                                    <span className="kpiLabel">고위험 이벤트</span>
                                     <span className="kpiSub">건수</span>
                                 </div>
                                 <div className="kpiValue">12</div>
                             </div>
                             <div className="kpiCard">
                                 <div className="kpiTitle">
-                                    <span className="kpiLabel">오늘 접수</span>
+                                    <span className="kpiLabel">오늘 발생</span>
                                     <span className="kpiSub">건수</span>
                                 </div>
                                 <div className="kpiValue">21</div>
@@ -142,8 +142,6 @@ function DailyReportManagement(props) {
                         </div>
                     </div>
 
-
-
                     <div className='dailyBoard'>
                         <div className='boardCount'>
                             <span>총 게시물: 50</span>
@@ -155,12 +153,12 @@ function DailyReportManagement(props) {
                                 <thead>
                                     <tr>
                                         <th>번호</th>
-                                        <th>현장/시설</th>
-                                        <th>업무유형</th>
-                                        <th>위험도</th>
-                                        <th>조치상태</th>
-                                        <th>제목</th>
-                                        <th>신고일</th>
+                                        <th>공장/구역</th>
+                                        <th>유형</th>
+                                        <th>등급</th>
+                                        <th>조치 상태</th>
+                                        <th>내용</th>
+                                        <th>발생 일시</th>
                                         <th>첨부</th>
                                         <th>조회</th>
                                     </tr>
@@ -173,7 +171,7 @@ function DailyReportManagement(props) {
                                             <td>{item.workType}</td>
                                             <td>{item.riskLevel}</td>
                                             <td>{item.actionStatus}</td>
-                                            <td className='align-left'><a href=''>{item.title}</a></td>
+                                            <td className='align-left'><a href='' title={item.title}>{item.title}</a></td>
                                             <td>{item.reportDate}</td>
                                             <td>{item.hasAttachment ? <FaPaperclip/>: ''}</td>
                                             <td>{item.viewCount}</td>

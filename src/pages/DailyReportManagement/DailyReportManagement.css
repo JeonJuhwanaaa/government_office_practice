@@ -239,6 +239,22 @@
     font-size: 14px;
     border-left: none;
     border-right: none;
+    
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.dailyBoard .boardTable td:nth-child(6) {
+    white-space: nowrap;
+    max-width: 212px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+.dailyBoard .boardTable td:nth-child(2) {
+    white-space: nowrap;
+    max-width: 167px;
+    overflow: hidden;
+    text-overflow: ellipsis;
 }
 
 .dailyBoard .boardBox .boardTable a {
