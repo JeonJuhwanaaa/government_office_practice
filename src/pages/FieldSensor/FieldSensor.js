@@ -35,8 +35,8 @@ function FieldSensor(props) {
     };
 
     const sensors = [
-        { id: "UWB-001", name: "A라인", x: 820, y: 240, status: "normal" },
-        { id: "UWB-002", name: "B라인", x: 1090, y: 240, status: "warning" },
+        { id: "UWB-001", name: "A라인", x: 670, y: 580, status: "normal" },
+        { id: "UWB-002", name: "B라인", x: 990, y: 565, status: "warning" },
         { id: "ENV-018", name: "제어실", x: 520, y: 250, status: "danger" },
     ];
 
