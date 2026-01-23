@@ -82,18 +82,18 @@ function PublicFacility(props) {
                     </div>
 
                     <div className='sub_container'>
-                        <div className='sub_title'>1. 정기안전점검</div>
+                        <div className='sub_title'>1. 정기 안전점검</div>
                         
                         <div className='width_extra'>
                             <table className='sub_table'>
                                 <caption></caption>
                                 <thead>
                                     <tr>
-                                        <th rowSpan={2}>하천명</th>
-                                        <th rowSpan={2}>시설명</th>
-                                        <th colSpan={3}>20년 정기안전점검</th>
-                                        <th colSpan={3}>21년 정기안전점검</th>
-                                        <th colSpan={3}>22년 정기안전점검</th>
+                                        <th rowSpan={2}>공장명</th>
+                                        <th rowSpan={2}>공정/설비</th>
+                                        <th colSpan={3}>20년 정기 안전점검</th>
+                                        <th colSpan={3}>21년 정기 안전점검</th>
+                                        <th colSpan={3}>22년 정기 안전점검</th>
                                     </tr>
                                     <tr>
                                         <th>점검일시</th>
@@ -109,60 +109,60 @@ function PublicFacility(props) {
                                 </thead>
                                 <tbody>
                                     <tr>
-                                        <td rowSpan={3}>탄천</td>
-                                        <td>탄천교</td>
+                                        <td rowSpan={3}>제1공장</td>
+                                        <td style={{textAlign:'left'}}>성형기 A라인</td>
                                         <td>2020-03-15</td><td>3,200,000원</td><td>B</td>
                                         <td>2021-03-18</td><td>3,400,000원</td><td>B</td>
                                         <td>2022-03-20</td><td>3,600,000원</td><td>A</td>
                                     </tr>
                                     <tr>
-                                        <td>수서교</td>
+                                        <td style={{textAlign:'left'}}>컨베이어(이송라인) 1구간</td>
                                         <td>2020-04-10</td><td>2,500,000원</td><td>C</td>
                                         <td>2021-04-12</td><td>2,700,000원</td><td>B</td>
                                         <td>2022-04-14</td><td>2,900,000원</td><td>B</td>
                                     </tr>
                                     <tr>
-                                        <td>탄천 좌안 제방</td>
+                                        <td style={{textAlign:'left'}}>집진기(분진 폭발/필터 상태) #1</td>
                                         <td>2020-05-05</td><td>2,300,000원</td><td>B</td>
                                         <td>2021-05-07</td><td>2,500,000원</td><td>B</td>
                                         <td>2022-05-09</td><td>2,700,000원</td><td>A</td>
                                     </tr>
 
                                     <tr>
-                                        <td rowSpan={3}>양재천</td>
-                                        <td>양재교</td>
+                                        <td rowSpan={3}>제2공장</td>
+                                        <td style={{textAlign:'left'}}>혼합·배합기</td>
                                         <td>2020-03-22</td><td>3,100,000원</td><td>B</td>
                                         <td>2021-03-25</td><td>3,300,000원</td><td>A</td>
                                         <td>2022-03-27</td><td>3,500,000원</td><td>A</td>
                                     </tr>
                                     <tr>
-                                        <td>도곡교</td>
+                                        <td style={{textAlign:'left'}}>건조로 1호기</td>
                                         <td>2020-04-18</td><td>2,400,000원</td><td>C</td>
                                         <td>2021-04-20</td><td>2,600,000원</td><td>B</td>
                                         <td>2022-04-22</td><td>2,800,000원</td><td>B</td>
                                     </tr>
                                     <tr>
-                                        <td>양재천 좌안 제방</td>
+                                        <td style={{textAlign:'left'}}>전기실(분전반) A</td>
                                         <td>2020-05-12</td><td>2,200,000원</td><td>B</td>
                                         <td>2021-05-14</td><td>2,400,000원</td><td>B</td>
                                         <td>2022-05-16</td><td>2,600,000원</td><td>A</td>
                                     </tr>
 
                                     <tr>
-                                        <td rowSpan={3}>청계천</td>
-                                        <td>청계천1교</td>
+                                        <td rowSpan={3}>제3공장</td>
+                                        <td style={{textAlign:'left'}}>소성로 1호기</td>
                                         <td>2020-02-28</td><td>3,500,000원</td><td>A</td>
                                         <td>2021-03-02</td><td>3,700,000원</td><td>A</td>
                                         <td>2022-03-04</td><td>3,900,000원</td><td>A</td>
                                     </tr>
                                     <tr>
-                                        <td>무학교</td>
+                                        <td style={{textAlign:'left'}}>냉각·선별 구역</td>
                                         <td>2020-04-01</td><td>2,600,000원</td><td>B</td>
                                         <td>2021-04-03</td><td>2,800,000원</td><td>B</td>
                                         <td>2022-04-05</td><td>3,000,000원</td><td>B</td>
                                     </tr>
                                     <tr>
-                                        <td>청계천 좌안 제방</td>
+                                        <td style={{textAlign:'left'}}>적재장(지게차 동선 구역)</td>
                                         <td>2020-05-20</td><td>2,300,000원</td><td>C</td>
                                         <td>2021-05-22</td><td>2,500,000원</td><td>B</td>
                                         <td>2022-05-24</td><td>2,700,000원</td><td>B</td>
@@ -171,18 +171,18 @@ function PublicFacility(props) {
                             </table>
                         </div>
 
-                        <div className='sub_title' style={{marginTop:'20px'}}>2. 정밀안전점검</div>
+                        <div className='sub_title' style={{marginTop:'20px'}}>2. 정밀 안전점검</div>
 
                         <div className='width_extra'>
                             <table className='sub_table'>
                                 <caption></caption>
                                 <thead>
                                     <tr>
-                                        <th rowSpan={2}>하천명</th>
-                                        <th rowSpan={2}>시설명</th>
-                                        <th colSpan={3}>20년 정밀안전점검</th>
-                                        <th colSpan={3}>21년 정밀안전점검</th>
-                                        <th colSpan={3}>22년 정밀안전점검</th>
+                                        <th rowSpan={2}>공장명</th>
+                                        <th rowSpan={2}>공정/설비</th>
+                                        <th colSpan={3}>20년 정밀 안전점검</th>
+                                        <th colSpan={3}>21년 정밀 안전점검</th>
+                                        <th colSpan={3}>22년 정밀 안전점검</th>
                                     </tr>
                                     <tr>
                                         <th>점검일시</th>
@@ -198,58 +198,58 @@ function PublicFacility(props) {
                                 </thead>
                                 <tbody>
                                     <tr>
-                                        <td rowSpan={3}>탄천</td>
-                                        <td>탄천교</td>
+                                        <td rowSpan={3}>제1공장</td>
+                                        <td style={{textAlign:'left'}}>성형기 A라인</td>
                                         <td>2020-06-12</td><td>7,800,000원</td><td>B</td>
                                         <td>2021-06-15</td><td>8,200,000원</td><td>B</td>
                                         <td>2022-06-18</td><td>8,600,000원</td><td>A</td>
                                     </tr>
                                    <tr>
-                                        <td>수서교</td>
+                                        <td style={{textAlign:'left'}}>컨베이어(이송라인) 1구간</td>
                                         <td>2020-07-05</td><td>6,500,000원</td><td>C</td>
                                         <td>2021-07-08</td><td>6,900,000원</td><td>B</td>
                                         <td>2022-07-10</td><td>7,300,000원</td><td>B</td>
                                     </tr>
                                     <tr>
-                                        <td>탄천 좌안 제방</td>
+                                        <td style={{textAlign:'left'}}>집진기(분진 폭발/필터 상태) #1</td>
                                         <td>2020-08-02</td><td>6,200,000원</td><td>B</td>
                                         <td>2021-08-05</td><td>6,600,000원</td><td>B</td>
                                         <td>2022-08-07</td><td>7,000,000원</td><td>A</td>
                                     </tr>
                                     <tr>
-                                        <td rowSpan={3}>양재천</td>
-                                        <td>양재교</td>
+                                        <td rowSpan={3}>제2공장</td>
+                                        <td style={{textAlign:'left'}}>혼합·배합기</td>
                                         <td>2020-06-20</td><td>8,100,000원</td><td>B</td>
                                         <td>2021-06-23</td><td>8,500,000원</td><td>A</td>
                                         <td>2022-06-25</td><td>8,900,000원</td><td>A</td>
                                     </tr>
                                     <tr>
-                                        <td>도곡교</td>
+                                        <td style={{textAlign:'left'}}>건조로 1호기</td>
                                         <td>2020-07-15</td><td>6,800,000원</td><td>C</td>
                                         <td>2021-07-18</td><td>7,200,000원</td><td>B</td>
                                         <td>2022-07-20</td><td>7,600,000원</td><td>B</td>
                                     </tr>
                                     <tr>
-                                        <td>양재천 좌안 제방</td>
+                                        <td style={{textAlign:'left'}}>전기실(분전반) A</td>
                                         <td>2020-08-10</td><td>6,400,000원</td><td>B</td>
                                         <td>2021-08-13</td><td>6,800,000원</td><td>B</td>
                                         <td>2022-08-15</td><td>7,200,000원</td><td>A</td>
                                     </tr>
                                     <tr>
-                                        <td rowSpan={3}>청계천</td>
-                                        <td>청계천1교</td>
+                                        <td rowSpan={3}>제3공장</td>
+                                        <td style={{textAlign:'left'}}>소성로 1호기</td>
                                         <td>2020-05-28</td><td>8,500,000원</td><td>A</td>
                                         <td>2021-05-31</td><td>8,900,000원</td><td>A</td>
                                         <td>2022-06-02</td><td>9,300,000원</td><td>A</td>
                                     </tr>
                                     <tr>
-                                        <td>무학교</td>
+                                        <td style={{textAlign:'left'}}>냉각·선별 구역</td>
                                         <td>2020-07-01</td><td>7,000,000원</td><td>B</td>
                                         <td>2021-07-04</td><td>7,400,000원</td><td>B</td>
                                         <td>2022-07-06</td><td>7,800,000원</td><td>B</td>
                                     </tr>
                                     <tr>
-                                        <td>청계천 좌안 제방</td>
+                                        <td style={{textAlign:'left'}}>적재장(지게차 동선 구역)</td>
                                         <td>2020-08-18</td><td>6,700,000원</td><td>C</td>
                                         <td>2021-08-21</td><td>7,100,000원</td><td>B</td>
                                         <td>2022-08-23</td><td>7,500,000원</td><td>B</td>
