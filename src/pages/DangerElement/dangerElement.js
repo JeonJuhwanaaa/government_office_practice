@@ -68,25 +68,25 @@ export function DangerElement(props) {
 
                 <div className='searchBox'>
                     <div className='facility'>
-                        <div className='facTitle'>시설 선택</div>
+                        <div className='facTitle'>구역 선택</div>
                         <div className='facList'>
-                            <a href='/'>모든시설</a>
+                            <a href='/'>모든 구역</a>
                             <span>｜</span>
-                            <a href='/'>교량</a>
+                            <a href='/'>원료 투입 구역</a>
                             <span>｜</span>
-                            <a href='/'>터널</a>
+                            <a href='/'>성형 라인</a>
                             <span>｜</span>
-                            <a href='/'>하천</a>
+                            <a href='/'>건조로</a>
                             <span>｜</span>
-                            <a href='/'>항만</a>
+                            <a href='/'>소성로</a>
                             <span>｜</span>
-                            <a href='/'>건축물1</a>
+                            <a href='/'>냉각 구역</a>
                             <span>｜</span>
-                            <a href='/'>건축물2</a>
+                            <a href='/'>적재장</a>
                             <span>｜</span>
-                            <a href='/'>상수도</a>
+                            <a href='/'>출입구</a>
                             <span>｜</span>
-                            <a href='/'>하수도</a>
+                            <a href='/'>제어실</a>
                         </div>
                     </div>
 
