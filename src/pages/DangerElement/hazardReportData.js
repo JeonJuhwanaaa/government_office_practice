@@ -1,50 +1,50 @@
 export const hazardReportStatus = [
   {
-    facilityType: "교량",
-    reportedCount: 620,
-    processedCount: 430,
-    processRate: 69
+    facilityType: "원료 투입 구역",
+    reportedCount: 145,
+    processedCount: 118,
+    processRate: 81
   },
   {
-    facilityType: "터널",
-    reportedCount: 280,
-    processedCount: 190,
-    processRate: 68
+    facilityType: "성형 라인",
+    reportedCount: 210,
+    processedCount: 162,
+    processRate: 77
   },
   {
-    facilityType: "하천",
-    reportedCount: 410,
-    processedCount: 310,
-    processRate: 76
+    facilityType: "건조로",
+    reportedCount: 132,
+    processedCount: 101,
+    processRate: 77
   },
   {
-    facilityType: "항만",
-    reportedCount: 190,
-    processedCount: 155,
-    processRate: 82
+    facilityType: "소성로",
+    reportedCount: 168,
+    processedCount: 119,
+    processRate: 71
   },
   {
-    facilityType: "건축물1",
-    reportedCount: 520,
-    processedCount: 445,
-    processRate: 86
+    facilityType: "냉각 구역",
+    reportedCount: 96,
+    processedCount: 82,
+    processRate: 85
   },
   {
-    facilityType: "건축물2",
-    reportedCount: 480,
-    processedCount: 420,
-    processRate: 88
+    facilityType: "적재장",
+    reportedCount: 174,
+    processedCount: 128,
+    processRate: 74
   },
   {
-    facilityType: "상수도",
-    reportedCount: 900,
-    processedCount: 810,
-    processRate: 90
+    facilityType: "출입구",
+    reportedCount: 88,
+    processedCount: 73,
+    processRate: 83
   },
   {
-    facilityType: "하수도",
-    reportedCount: 510,
-    processedCount: 350,
-    processRate: 69
+    facilityType: "제어실",
+    reportedCount: 54,
+    processedCount: 49,
+    processRate: 91
   }
 ];
