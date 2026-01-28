@@ -72,6 +72,11 @@
     /* border: 1px solid black; */
 }
 
+.registBox .registTitleNotice a {
+    text-decoration: none;
+    color: #fff;
+}
+
 .registBox .registTitleNotice .textBold {
     font-size: 30px;
     margin-bottom: 16px;

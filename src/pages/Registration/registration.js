@@ -19,7 +19,7 @@ function registration(props) {
                     </div>
                     <div className='registTitleNotice'>
                         <span>신고 하시기 전에&nbsp;</span>
-                        <span className='textBold'>&nbsp;자주하는 질문&nbsp;</span>
+                        <a href='' className='textBold'>&nbsp;자주하는 질문&nbsp;</a>
                         <span>&nbsp;확인해 주세요.</span> 
                     </div>
                     <div className='registList'>
@@ -43,26 +43,26 @@ function registration(props) {
                     </colgroup>
                     <tbody>
                         <tr>
-                            <th scope='row'>시설 선택</th>
+                            <th scope='row'>구역 선택</th>
                             <td>
                                 <div className="rowFlex">
-                                    <a href='/' className="linkBtn">모든 시설</a>
+                                    <a href='/' className="linkBtn">모든 구역</a>
                                     <span className="sep">｜</span>
-                                    <a href='/' className="linkBtn">교량</a>
+                                    <a href='/' className="linkBtn">원료 투입 구역</a>
                                     <span className="sep">｜</span>
-                                    <a href='/' className="linkBtn">터널</a>
+                                    <a href='/' className="linkBtn">성형 라인</a>
                                     <span className="sep">｜</span>
-                                    <a href='/' className="linkBtn">하천</a>
+                                    <a href='/' className="linkBtn">건조로</a>
                                     <span className="sep">｜</span>
-                                    <a href='/' className="linkBtn">항만</a>
+                                    <a href='/' className="linkBtn">수성로</a>
                                     <span className="sep">｜</span>
-                                    <a href='/' className="linkBtn">건축물1</a>
+                                    <a href='/' className="linkBtn">냉각 구역</a>
                                     <span className="sep">｜</span>
-                                    <a href='/' className="linkBtn">건축물2</a>
+                                    <a href='/' className="linkBtn">적재장</a>
                                     <span className="sep">｜</span>
-                                    <a href='/' className="linkBtn">상수도</a>
+                                    <a href='/' className="linkBtn">출입구</a>
                                     <span className="sep">｜</span>
-                                    <a href='/' className="linkBtn">하수도</a>
+                                    <a href='/' className="linkBtn">제어실</a>
                                 </div>
                             </td>
                         </tr>
@@ -107,7 +107,7 @@ function registration(props) {
                         <thead>
                             <tr>
                                 <th>번호</th>
-                                <th>시설 구분</th>
+                                <th>구역 구분</th>
                                 <th>신고 제목</th>
                                 <th>신청일</th>
                                 <th>첨부</th>
