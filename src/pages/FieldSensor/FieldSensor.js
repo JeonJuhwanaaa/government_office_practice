@@ -38,6 +38,7 @@ function FieldSensor(props) {
         { id: "UWB-001", name: "A라인", x: 670, y: 580, status: "normal" },
         { id: "UWB-002", name: "B라인", x: 990, y: 565, status: "warning" },
         { id: "ENV-018", name: "제어실", x: 520, y: 250, status: "danger" },
+        { id: "SAFE-012", name: "통로", x: 270, y: 720, status: "normal" },
     ];
 
     return (
